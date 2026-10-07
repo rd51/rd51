@@ -1,78 +1,133 @@
-# GitHub profile — github.com/rd51
+# Rakshanda Dhote
 
-## Scope
+**AI/ML engineer — applied machine learning, NLP, and MLOps.**
 
-**Required** — these appear on your profile page itself:
+Master of AI in Business at SP Jain, Dubai. Previously prompt engineering and business analysis at E-zest Solutions, Pune.
 
-1. The README (`publish/README.md`)
-2. Bio + location in your profile sidebar — both currently empty
-3. Which six repos are pinned
-4. Descriptions for those six — pinned cards show name, description and language, and
-   yours currently show a blank where the description goes
+[![Portfolio](https://img.shields.io/badge/Portfolio-14B8A6?style=flat-square&logoColor=white)](https://rakshanda-portfolio.rakshanda0501.workers.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rakshanda-dhote)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0006--0535--4862-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0006-0535-4862)
 
-**Optional, whenever** — everything below the pinned six. Descriptions on the other
-21 repos only show on the Repositories tab, not the profile. The empty repos and the
-RescueBot typo are housekeeping I noticed in passing, not part of the profile job.
+---
 
-No renames.
+## About
 
-## Proposed pins — replacing the current six
+I work where business needs meet technical implementation — translating requirements into technical work, and results back into plain language. I treat "understandable to a non-technical stakeholder" as part of finished work, not a write-up afterwards.
 
-Current pins: `Banking-Fraud-Detection`, `customer-retention-intelligence-platform-`, `E-commerce-Business-Intelligence-Dashboard`, `esars-stimulator`, `MLOps`, `NovaMart`
+> **I listen before I build.** Understanding the problem comes before designing the solution.
 
-Three of those are weak: `esars-stimulator` is 65 KB, `NovaMart` is 554 KB with no README, and `MLOps` has no README at all.
+Most of what's here runs on self-imposed deadlines: independent research and projects I took further than the brief required.
 
-| # | Repo | Why it earns a pin |
-|---|---|---|
-| 1 | `Strait-Disruption-DL` | Your most ambitious project. Multimodal deep learning, validated against a real 2026 event. 13.5 MB — the most substantial thing on the account. |
-| 2 | `wafa` | Multilingual NLP, fairness audit, and you caught your own leakage bug. The honesty is a feature. |
-| 3 | `Banking-Fraud-Detection` | Sequence modelling + attention + stacked ensemble at 6.36M rows. Clean README. |
-| 4 | `SDAIM-MLops` | The **only** repo with a live CI badge, Docker, and a deployed Space. This is what proves MLOps rather than claiming it. |
-| 5 | `TechNova-Workforce-Optimizer` | Algorithmic bias and ethics. Directly on-theme for Anthropic Fellows and the AI Societal Impact Fellowship. |
-| 6 | `RescueBot-POMDP` | POMDPs and Bayesian belief updating — shows reasoning under uncertainty, not just supervised learning. |
+---
 
-## Descriptions — ready to paste
+## Selected projects
 
-Verified against each repo's actual README.
+### [Hormuz Disruption Engine](https://github.com/rd51/Strait-Disruption-DL)
 
-| Repo | Description |
+Supply-chain early-warning system for the Strait of Hormuz and UAE ports. Fuses satellite imagery, market price signals, and geopolitical event text into a single chokepoint risk index — and explains in plain language why the index moved. Validated against the 2026 Hormuz crisis.
+
+`Deep learning` · `Multimodal fusion` · `Time series`
+
+### [Project Wafa — Customer Retention Intelligence](https://github.com/rd51/wafa)
+
+Multilingual retention platform for a UAE bank case study, built solo. A BiLSTM multi-task classifier and fine-tuned DistilmBERT read code-switched English/Arabic/Hindi/Tagalog messages; a LogReg/XGBoost model scores churn; Qwen2.5 drafts outreach behind regex guardrails, with a human approving every send.
+
+Worth saying plainly: the first run scored 100%, which turned out to be template leakage. Corrected on unseen templates, it scores **32–54%**. Risk was fairness-audited across nationalities.
+
+`Keras` · `Hugging Face` · `XGBoost` · `Qwen2.5` · `Gradio`
+
+### [Banking Fraud Detection & AML](https://github.com/rd51/Banking-Fraud-Detection)
+
+Transaction-sequence fraud detection on 6.36M PaySim records (0.13% fraud), streamed in under 1 GB of memory. Conv1D → LSTM → multi-head self-attention, stacked under an XGBoost meta-learner, routing each transaction to CLEAR / REVIEW / FREEZE. Sanctions and PEP fuzzy screening, auto-drafted SAR narratives, and a DEPLOY/REJECT model-governance gate.
+
+`LSTM` · `CNN` · `Attention` · `XGBoost` · `Docker` · `Streamlit`
+
+### [Credit Default Risk Scorer](https://github.com/rd51/SDAIM-MLops)
+
+Predicts whether a credit card account defaults on its next payment, so a lender can intervene on accounts that are at risk but still recoverable. Ships as a Dockerised service behind a reproducibility-gated GitHub Actions pipeline.
+
+`MLflow` · `GitHub Actions` · `Docker` · `pytest`
+
+### [The Algorithmic Layoff](https://github.com/rd51/TechNova-Workforce-Optimizer)
+
+Ethics-in-AI project on using algorithmic performance metrics to drive layoffs. Builds a transparent dashboard over a synthetic 2,400-employee dataset with 47 performance variables, specifically to expose the bias such metrics encode rather than hide it.
+
+`Data visualisation` · `Algorithmic fairness` · `Ethics`
+
+### [RescueBot — POMDP Operator Console](https://github.com/rd51/RescueBot-POMDP)
+
+A Partially Observable Markov Decision Process as a deployable web app. A rescue robot navigates a foggy grid without knowing its own position, reasoning from noisy heat-sensor readings via live Bayesian belief updating.
+
+`POMDP` · `Bayesian inference` · `Flask` · `NumPy`
+
+---
+
+## Research
+
+**Conference papers** — presented at IEEE TQCEBT-24, CHRIST (Deemed to be University) Pune Lavasa Campus, with the IEEE Pune Section and IEEE-TEMS Pune Chapter, 22 March 2024.
+
+- *Artificial Intelligence (AI) in CRM (Customer Relationship Management): A Sentiment Analysis Approach*
+- *Understanding the use of Regression Analysis in Business Analytics to understand the perceptions of Students about Quality in Higher Education*
+
+**Book chapters and articles**
+
+- *A Comparative Study on Quality Parameters in Higher Education: Perceptions of Students across Central, State and Private Universities* — research article chapter, MMU Press
+- *Future Directions in Intelligent Customer Experience Systems* — book chapter
+
+**Patents** — registered, Government of India
+
+- AI-Based Device for Personalized Learning
+- An Interactive Device for Using Social Media Platforms
+- Merchandise Collection Device
+
+**In progress**
+
+- Trust and Therapeutic Engagement in Digital Mental Health Chatbots
+- Neural Networks in the Manufacturing Sector
+- Privacy is Dead: Smart Dust and Pervasive Surveillance
+- Privacy Issues of Users in the Age of MCP Trackers
+
+---
+
+## Education
+
+**Master of Artificial Intelligence in Business** — SP Jain School of Global Management, Dubai · Sep 2025 – Sep 2027
+
+*Machine Learning · Deep Learning · NLP · Databases · Optimisation · MLOps*
+
+**BBA, Business Analytics** — CHRIST (Deemed to be University), Pune Lavasa Campus · Aug 2022 – Aug 2025
+
+*Business Statistics · Data Visualisation · SQL · Operations Research · Financial Analytics · Web Scraping*
+
+---
+
+## Experience
+
+**Prompt Engineer & Business Analyst Intern (Generative AI)** — E-zest Solutions, Pune · Jun 2024 – Aug 2024
+
+Built a multilingual compliance chatbot that checked travellers' medical records against a 200-page Malaysian regulation and returned a personalised test checklist — cutting review time from hours to under two minutes. Led prompt architecture across three client projects and maintained 20+ production prompt templates.
+
+---
+
+## Leadership
+
+- **Class Representative & AI Club Lead** — SP Jain, Dubai · Sep 2025 – present
+- **President, Research Club** — CHRIST University, Pune · Aug 2022 – Aug 2025
+- **Media Head & Graphic Designer, Centre for Social Action** — CHRIST University, Pune · Aug 2023 – Aug 2025
+
+---
+
+## Toolkit
+
+| | |
 |---|---|
-| `Strait-Disruption-DL` | Supply-chain disruption early-warning system for the Strait of Hormuz, fusing satellite imagery, price signals and geopolitical text into an explainable chokepoint risk index. |
-| `wafa` | Multilingual customer retention platform — BiLSTM + DistilmBERT over code-switched Arabic/English/Hindi/Tagalog, churn scoring, and LLM outreach drafts behind human approval. |
-| `Banking-Fraud-Detection` | Transaction-sequence fraud and AML detection on 6.36M PaySim records: Conv1D → LSTM → self-attention, stacked under XGBoost, routing to CLEAR / REVIEW / FREEZE. |
-| `SDAIM-MLops` | Credit card default risk scorer with a reproducibility-gated GitHub Actions pipeline, Docker packaging and a deployed Gradio service. |
-| `TechNova-Workforce-Optimizer` | Ethics-in-AI dashboard exposing algorithmic bias in performance-metric-driven layoffs, over a synthetic 2,400-employee dataset. |
-| `RescueBot-POMDP` | POMDP rescue-robot simulator with live Bayesian belief updating over noisy sensor readings, served as a Flask web console. |
-| `smartgrid` | Stochastic energy dispatch optimiser balancing renewables, conventional generation and battery storage under demand uncertainty, framed as an MDP. |
-| `Stock-Market-Research` | AI-driven study of non-linear interactions between equity markets, VIX and labour indicators, using LSTM and tree ensembles in a Streamlit dashboard. |
-| `waselx` | Last-mile delivery network optimisation — graph algorithms, tree and linear structures, sorting benchmarks, with Flask API and Streamlit frontend. |
-| `E-commerce-Business-Intelligence-Dashboard` | Streamlit BI dashboard for e-commerce analytics with predictive models, SHAP explainability, knowledge graphs and real-time reporting. |
-| `Bank-Data-Linux` | Bank customer classification project. |
-| `e-commerce` | *(already has one — current text is 3 lines; suggest trimming to)* Automated e-commerce churn prediction pipeline built on Hugging Face to replace a manual ML workflow. |
+| **Languages & APIs** | Python · SQL · R · FastAPI · Flask · REST |
+| **ML & deep learning** | PyTorch · TensorFlow/Keras · scikit-learn · Hugging Face Transformers · XGBoost · SHAP |
+| **LLM & GenAI** | Prompt engineering · LangChain · fine-tuning · guardrails · Claude API |
+| **MLOps** | MLflow · Docker · AWS (ECR, ECS Fargate, CloudWatch) · GitHub Actions · Hugging Face Spaces |
+| **Testing** | pytest · Selenium · BeautifulSoup |
+| **Analytics & BI** | Power BI · Tableau · Streamlit · Gradio |
 
-## Needs a decision
+---
 
-**1. ~~Wafa — solo or group?~~ Resolved: solo. Both repos stay — your call, nothing breaks.**
-
-The README links to `/wafa`, which exists, so the duplicate costs nothing.
-
-One optional one-line edit: `customer-retention-intelligence-platform-`'s README says
-**"MAIB AI 115 · Final Group Project"** on work you built solo. Worth correcting whenever
-you're next in that repo. Not urgent, not blocking.
-
-**2. Three repos are empty and currently public:**
-- `AI-Credit-Risk-Scoring-` — 0 KB, no files at all
-- `SDAIM-2` — 0 KB
-- `ai-safety-work-` — 10 KB, no README
-
-An empty public repo named after a project reads worse than no repo. Make them private, delete them, or push the work.
-
-> I told you earlier to pin `AI-Credit-Risk-Scoring-`. That was wrong — I was going off your project record before I checked the repo. It's empty. The credit-risk work that *is* on GitHub is `SDAIM-MLops`.
-
-**3. `RescueBot-POMDP` names the wrong institution.**
-Its README says *"S.P. Jain Institute of Management and Research"* — that's SPJIMR in Mumbai, a different school from SP Jain School of Global Management, Dubai, where you actually study. Worth fixing.
-
-**4. Repos with no README — deferred, revisit later.**
-`MLOps`, `UAE-Dashboard-DVA`, `esars-stimulator`, `Optimisation-ecologistics`, `insurance`, `Universal-Bank`, `ProjectB`, `Mini-Project-Lab-Work`, `NovaMart`, `lulu-repository`, `luludashboard`
-
-Several look like coursework. When you come back to these, the options are: describe them, archive them, or make them private. Archiving greys them out and signals "finished coursework" rather than "abandoned". Nothing here blocks the profile README.
+<sub>Dubai, UAE · <a href="mailto:rakshanda0501@gmail.com">rakshanda0501@gmail.com</a></sub>
